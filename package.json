@@ -1,0 +1,40 @@
+{
+  "name": "array-has-value",
+  "version": "1.0.0",
+  "description": "Checks if the given array has the search item (Type: string | number | boolean | object | array | null | undefined) based on the given options.",
+  "main": "index.js",
+  "scripts": {
+    "string": "node ./tests/string.test.js",
+    "number": "node ./tests/number.test.js",
+    "object": "node ./tests/object.test.js",
+    "array": "node ./tests/array.test.js",
+    "null": "node ./tests/null.test.js",
+    "boolean": "node ./tests/boolean.test.js",
+    "undefined": "node ./tests/undefined.test.js",
+    "type": "node ./tests/lib/type.test.js",
+    "stringify": "node ./tests/lib/stringify.test.js",
+    "makeComparable": "node ./tests/lib/makeComparable.test.js"
+  },
+  "keywords": [
+    "array",
+    "has",
+    "value",
+    "contains",
+    "element",
+    "exits",
+    "case",
+    "sensitive",
+    "object",
+    "includes",
+    "string",
+    "number",
+    "object",
+    "array",
+    "non-null",
+    "undefined",
+    "boolean",
+    "strictType"
+  ],
+  "author": "Jana Rangasamy <janagr7@gmail.com>",
+  "license": "ISC"
+}
