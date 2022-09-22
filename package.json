@@ -36,5 +36,17 @@
     "strictType"
   ],
   "author": "Jana Rangasamy <janagr7@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "homepage": "https://github.com/grjan7/array-has-value#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grjan7/array-has-value.git"
+  },
+  "bugs": {
+    "url": "https://github.com/grjan7/array-has-value/issues"
+  }
 }
