@@ -4,6 +4,7 @@
 [![NPM downloads](https://img.shields.io/npm/dm/array-has-value.svg)](https://www.npmjs.com/package/array-has-value)
 [![Known Vulnerabilities](https://snyk.io/test/github/grjan7/array-has-value/badge.svg)](https://snyk.io/test/github/grjan7/array-has-value)
 
+
 ## Description
 
 This package checks if a value (`searchItem`: `string | number | boolean | object | array | null | undefined`) is in an array (`sourceArray`: `array`) and returns `true` if it is, else it returns `false`. By default, the search is case-sensitive and strictly typed with number. The search is only at the top level of the array.
@@ -19,19 +20,20 @@ npm install array-has-value
 
 ```
 
-## `arrayHasValue(sourceArray, searchItem, opts)` returns boolean
+### `arrayHasValue(sourceArray, searchItem, opts)`
 
-**sourceArray** | type: array | default: none | required
-**searchItem** | type: any | default: none | required
-**opts** | type: object | optional
-**opts.caseSensitive** | type: boolean | default: true | optional
-**opts.strictType** | type: boolean | default: true | optional
+- **sourceArray** | type: array | default: none | required
+- **searchItem** | type: any | default: none | required
+- **opts** | type: object | optional
+- **opts.caseSensitive** | type: boolean | default: true | optional
+- **opts.strictType** | type: boolean | default: true | optional
+- **returns** | type: boolean
 
-## Usage
+### Usage
 
-### Example: With Default Options
+#### Example: With Default Options
 
-#### String
+##### String
 
 ```js
 
@@ -53,7 +55,7 @@ arrayHasValue(arr, "Hello"); // returns true
 
 ```
 
-#### Number
+##### Number
 
 ```js
 
@@ -75,7 +77,7 @@ arrayHasValue(arr, 40); // returns true
 
 ```
 
-#### Object
+##### Object
 
 ```js
 
@@ -98,7 +100,7 @@ arrayHasValue(arr, { name: "john" }); // returns false
 ```
 
 
-#### Array
+##### Array
 
 ```js
 
@@ -131,7 +133,7 @@ arrayHasValue(arr, [ "Hello", 10 ]); // returns false
 ```
 
 
-#### Boolean
+##### Boolean
 
 ```js
 
@@ -153,7 +155,7 @@ arrayHasValue(arr, true); // returns false
 
 ```
 
-#### Null
+##### Null
 
 ```js
 
@@ -175,7 +177,7 @@ arrayHasValue(arr, null); // returns false
 
 ```
 
-#### Undefined
+##### Undefined
 
 ```js
 
@@ -198,9 +200,9 @@ arrayHasValue(arr, undefined); // returns false
 ```
 
 
-### Example: With Custom Options
+#### Example: With Custom Options
 
-#### String | `caseSensitive: false`
+##### String | `caseSensitive: false`
 
 ```js
 
@@ -212,7 +214,7 @@ arrayHasValue(arr, "hello", { caseSensitive: false }); // returns true
 
 ```
 
-#### Number | `strictType: false`
+##### Number | `strictType: false`
 
 ```js
 
@@ -224,7 +226,7 @@ arrayHasValue(arr, 40, { strictType: false }); // returns true
 
 ```
 
-#### Object | `caseSensitive: false`
+##### Object | `caseSensitive: false`
 
 ```js
 
@@ -236,7 +238,7 @@ arrayHasValue(arr, { name: "john" }, { caseSensitive: false }); // returns true
 
 ```
 
-#### Object | `caseSensitive: false` | `strictType: false`
+##### Object | `caseSensitive: false` | `strictType: false`
 
 ```js
 
@@ -251,7 +253,7 @@ arrayHasValue(arr, searchItem, opts); // returns true
 ```
 
 
-#### Array | `caseSensitive: false`
+##### Array | `caseSensitive: false`
 
 ```js
 
@@ -263,7 +265,7 @@ arrayHasValue(arr, [ "hello", 10 ], { caseSensitive: false }); // returns true
 
 ```
 
-#### Array | `strictType: false`
+##### Array | `strictType: false`
 
 ```js
 
@@ -275,7 +277,7 @@ arrayHasValue(arr, [ "Hello", 10 ], { strictType: false }); // returns true
 
 ```
 
-#### Array | `caseSensitive: false` | `strictType: false`
+##### Array | `caseSensitive: false` | `strictType: false`
 
 ```js
 
