@@ -1,5 +1,9 @@
 # array-has-value
 
+[![NPM version](https://img.shields.io/npm/v/array-has-value.svg)](https://www.npmjs.com/package/array-has-value)
+[![NPM downloads](https://img.shields.io/npm/dm/array-has-value.svg)](https://www.npmjs.com/package/array-has-value)
+[![Known Vulnerabilities](https://snyk.io/test/github/grjan7/array-has-value/badge.svg)](https://snyk.io/test/github/grjan7/array-has-value)
+
 ## Description
 
 This package checks if a value (`searchItem`: `string | number | boolean | object | array | null | undefined`) is in an array (`sourceArray`: `array`) and returns `true` if it is, else it returns `false`. By default, the search is case-sensitive and strictly typed with number. The search is only at the top level of the array.
